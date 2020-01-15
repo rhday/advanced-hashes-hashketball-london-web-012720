@@ -205,7 +205,7 @@ def big_shoe_rebounds
   return rebounds
 end
 
-def most_points_scored(team_name) #This results in the most points scored by someone in the whole game hash, not in each team
+def most_points_scored(player_names_name) #This results in the most points scored by someone in the whole game hash, not in each team
     players = player_names(team_name)
     most_points = 0
     name = ""
