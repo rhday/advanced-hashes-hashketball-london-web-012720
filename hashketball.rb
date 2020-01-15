@@ -205,3 +205,16 @@ def big_shoe_rebounds
   return rebounds
 end
 
+def most_points_scored(team_name) #This results in the most points scored by someone in the whole game hash, not in each team
+    players = player_names(team_name)
+    most_points = 0
+    name = ""
+
+    players.each do |player|
+        if most_points < num_points_scored(player)
+            most_points = num_points_scored(player)
+            name = player
+        end
+    end
+    return name
+end
